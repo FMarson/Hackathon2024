@@ -41,7 +41,7 @@ public class Main {
         gbc.weighty = 0;
         formContainer.add(labelTipoUsuario, gbc);
 
-        String[] tiposUsuario = {"Pessoa", "Instituição"};
+        String[] tiposUsuario = {" ", "Pessoa", "Instituição"};
         JComboBox<String> comboTipoUsuario = new JComboBox<>(tiposUsuario);
         gbc.gridx = 0;
         gbc.gridy = 1;
@@ -49,7 +49,7 @@ public class Main {
 
         JLabel labelTipoPessoa = new JLabel("Doador ou Necessitado:");
         JTextField textCPF = new JTextField(20);
-        JComboBox<String> comboTipoPessoa = new JComboBox<>(new String[]{"Doador", "Necessitado"});
+        JComboBox<String> comboTipoPessoa = new JComboBox<>(new String[]{" ", "Doador", "Necessitado"});
         JLabel labelCidadePessoa = new JLabel("Cidade");
         JTextField textCidadePessoa = new JTextField(20);
         JLabel labelBairroPessoa = new JLabel("Bairro");
